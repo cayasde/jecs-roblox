@@ -1,5 +1,6 @@
 local jecs = require("@self/upstream")
 local scheduler = require("@self/scheduler")
+local collect = require("@self/collect")
 
 export type Archetype = jecs.Archetype
 export type QueryInner = jecs.QueryInner
@@ -28,6 +29,7 @@ export type Schedule = scheduler.Schedule
 
 local exports = {}
 exports.scheduler = scheduler
+exports.collect = collect
 
 for key, value in jecs do
 	exports[key] = value
@@ -35,4 +37,5 @@ end
 
 return exports :: typeof(jecs) & {
 	scheduler: typeof(scheduler),
+	collect: typeof(collect),
 }
