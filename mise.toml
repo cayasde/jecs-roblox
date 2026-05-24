@@ -1,6 +1,6 @@
 [tools]
 "github:UpliftGames/wally" = "0.3.2"
-"github:rojo-rbx/rojo" = "7.7.0-rc.1"
+"github:rojo-rbx/rojo" = "7.6.1"
 "aqua:luau-lang/luau" = "0.703"
 "github:scythe-technology/zune" = "0.5.1"
 
