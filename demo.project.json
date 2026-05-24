@@ -6,6 +6,10 @@
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
       "$path": "demo/shared",
+      "assets": {
+        "$className": "Folder",
+        "$ignoreUnknownInstances": true
+      },
       "jecs": {
         "$path": "src"
       },
