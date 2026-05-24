@@ -1,0 +1,14 @@
+[tools]
+"github:UpliftGames/wally" = "0.3.2"
+"github:rojo-rbx/rojo" = "7.7.0-rc.1"
+"aqua:luau-lang/luau" = "0.703"
+"github:scythe-technology/zune" = "0.5.1"
+
+[tasks."dev:sourcemap"]
+run = "rojo sourcemap -o sourcemap.json --watch"
+
+[tasks."dev:syncer"]
+run = "rojo serve"
+
+[tasks."dev"]
+depends = ["dev:sourcemap", "dev:syncer"]
