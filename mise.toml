@@ -5,10 +5,10 @@
 "github:scythe-technology/zune" = "0.5.1"
 
 [tasks."dev:sourcemap"]
-run = "rojo sourcemap -o sourcemap.json --watch"
+run = "rojo sourcemap demo.project.json -o sourcemap.json --watch"
 
 [tasks."dev:syncer"]
-run = "rojo serve"
+run = "rojo serve demo.project.json"
 
 [tasks."dev"]
 depends = ["dev:sourcemap", "dev:syncer"]

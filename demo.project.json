@@ -1,0 +1,21 @@
+{
+  "name": "jecs-demo",
+  "emitLegacyScripts": false,
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$path": "demo/shared",
+      "jecs": {
+        "$path": "src"
+      },
+      "client": {
+        "$path": "demo/client"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$path": "demo/server"
+    }
+  }
+}
